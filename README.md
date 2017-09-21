@@ -56,15 +56,6 @@ public class MainActivity ... {
                 activity.finish();
             }
         }
-
-        @Override
-        public void onFailed(int failedCause) {
-            // 退出游戏
-            MainActivity activity = activityWeakReference.get();
-            if (activity != null) {
-                activity.finish();
-            }
-        }
     }
 }
 ```

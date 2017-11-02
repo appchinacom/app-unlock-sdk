@@ -142,4 +142,4 @@ public class MainActivity ... {
 [download_badge_icon]: https://api.bintray.com/packages/ac-android/maven/app-unlock/images/download.svg
 [download_page]: https://bintray.com/ac-android/maven/app-unlock/_latestVersion
 [aar_to_library_url]: http://www.jianshu.com/p/ccf306e08d5b
-[view_sign_app_dl_url]: https://github.com/ac-android/app-unlock-sdk/raw/master/art/Gen_Signature_Android221cbf.apk
+[view_sign_app_dl_url]: https://github.com/ac-android/app-unlock-sdk/raw/master/art/app_sign_viewer.apk

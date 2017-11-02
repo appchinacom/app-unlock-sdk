@@ -68,7 +68,7 @@ implementation 'com.appchina:app-unlock:$last_version'
 
 #### 2.2. 编码申请解锁
 
-在 APP 的入口 Activity 的 onCreate 方法中申请解锁，如下：
+在 app 入口 Activity 的 onCreate 方法中申请解锁，如下：
 
 ```java
 public class MainActivity ... {
@@ -76,9 +76,9 @@ public class MainActivity ... {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        /* 先用第一步注册后得到的 key 构建 AppInfo */
-        String acPubKey = ...;// 应用汇公钥
-        String devPriKey = ...;// 开发者私钥
+        /* 先使用之前得到的应用汇公钥和开发者私钥创建 AppInfo */
+        String acPubKey = ...;  // 应用汇公钥
+        String devPriKey = ...; // 开发者私钥
         AppInfo appInfo = new AppInfo(acPubKey, devPriKey);
 
         // 然后申请解锁
@@ -102,9 +102,9 @@ public class MainActivity ... {
 
         @Override
         public void onCanceled() {
-            // 退出游戏
             MainActivity activity = activityWeakReference.get();
             if (activity != null) {
+                // 用户取消解锁，退出游戏
                 activity.finish();
             }
         }
@@ -112,9 +112,34 @@ public class MainActivity ... {
 }
 ```
 
+### 3. 添加付费应用
 
-### 3. 提交审核
+#### 3.1. 上传 APP
+
+集成完 SDK 后，打包正式版 app，然后前往应用汇开发者网站，上传 app 或更新版本
+
+#### 3.2. 添加付费应用
+
+前往付费应用管理页面添加付费应用信息，如下图所属：
+
+![pay](art/screenshot_pay.png)
+
+* 应用名称：app 的名称，这里填的名称仅在 `付费应用列表` 中展示
+* 应用包名：app 的包名，也叫 `applicationId`，使用 Android Studio 开发的话一定要填 build.gradle 中配置的 `applicationId` 的值
+* 应用签名：[点击下载 app 签名查看器][view_sign_app_dl_url] 并安装，打开后找到你的 app，将显示的签名填到 `应用签名` 输入框里
+* 价格：app 的价格，单位元
+
+信息填完后，点击保存，等待审核
+
+#### 3.3. 审核
+
+审核周期一般为 2 个工作日，审核通过后就可以测试您的游戏了，如遇审核不通过需要修改应用签名的，只需重新添加相同应用包名的付费应用即可
+
+### 4. FAQ
+
+#### 4.1. 常见错误提示
 
 [download_badge_icon]: https://api.bintray.com/packages/ac-android/maven/app-unlock/images/download.svg
 [download_page]: https://bintray.com/ac-android/maven/app-unlock/_latestVersion
 [aar_to_library_url]: http://www.jianshu.com/p/ccf306e08d5b
+[view_sign_app_dl_url]: https://github.com/ac-android/app-unlock-sdk/raw/master/art/Gen_Signature_Android221cbf.apk

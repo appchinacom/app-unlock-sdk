@@ -112,6 +112,10 @@ public class MainActivity ... {
 }
 ```
 
+其它方法：
+* AppUnlocker.isUnlocked(Context): 判断是否已解锁
+* AppUnlocker.lock(Context): 锁定 app，下次进入游戏就需要重新解锁
+
 ### 3. 添加付费应用
 
 #### 3.1. 上传 APP

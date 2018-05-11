@@ -4,7 +4,12 @@
 
 集成了解锁 SDK 的游戏在运行时会先请求应用汇客户端申请解锁，用户可以在应用汇客户端内完成购买以及解锁操作，解锁成功后方可开始游戏
 
-<!-- [点我下载 demo apk][demo_url] -->
+### Demo
+[点击下载 demo apk v1.0.0-b1][demo_url]
+
+请安装 61345 版本应用汇测试 demo，目前正式最新版本有 bug
+
+[点击下载61345 版本应用汇][yyh_url]
 
 ### 1. 集成前准备
 
@@ -149,4 +154,5 @@ public class MainActivity ... {
 [download_page]: https://bintray.com/ac-android/maven/app-unlock/_latestVersion
 [aar_to_library_url]: http://www.jianshu.com/p/ccf306e08d5b
 [view_sign_app_dl_url]: https://github.com/ac-android/app-unlock-sdk/raw/master/art/app_sign_viewer.apk
-[demo_url]: https://github.com/ac-android/app-unlock-sdk/raw/master/app-unlock-sample-release-0.2.apk
+[demo_url]: https://github.com/ac-android/app-unlock-sdk/raw/master/app-unlock-sample-release-1.0.0-b1.apk
+[yyh_url]: https://github.com/ac-android/app-unlock-sdk/raw/master/appchina_2.1.61345_a1a62c7-normal-release.apk

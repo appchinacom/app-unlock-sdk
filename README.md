@@ -5,11 +5,10 @@
 集成了解锁 SDK 的游戏在运行时会先请求应用汇客户端申请解锁，用户可以在应用汇客户端内完成购买以及解锁操作，解锁成功后方可开始游戏
 
 ### Demo
-[点击下载 demo apk v1.0.0-b1][demo_url]
 
-请安装 61345 版本应用汇测试 demo，目前正式最新版本有 bug
+点击下载 [demo apk v1.0.0-b2][demo_url]
 
-[点击下载61345 版本应用汇][yyh_url]
+请到[应用汇官网]下载并安装最新版应用汇测试 demo（2.1.62716 以前有些版本有 bug，可能无法测试）
 
 ### 1. 集成前准备
 
@@ -148,11 +147,16 @@ public class MainActivity ... {
 
 ### 4. FAQ
 
-#### 4.1. 常见错误提示
+敬请期待
+
+### 5. 更新日志
+
+[CHANGELOG.md]
 
 [download_badge_icon]: https://api.bintray.com/packages/ac-android/maven/app-unlock/images/download.svg
 [download_page]: https://bintray.com/ac-android/maven/app-unlock/_latestVersion
 [aar_to_library_url]: http://www.jianshu.com/p/ccf306e08d5b
 [view_sign_app_dl_url]: https://github.com/ac-android/app-unlock-sdk/raw/master/art/app_sign_viewer.apk
-[demo_url]: https://github.com/ac-android/app-unlock-sdk/raw/master/app-unlock-sample-release-1.0.0-b1.apk
-[yyh_url]: https://github.com/ac-android/app-unlock-sdk/raw/master/appchina_2.1.61345_a1a62c7-normal-release.apk
+[demo_url]: https://github.com/ac-android/app-unlock-sdk/raw/master/app-unlock-sample-release-1.0.0-b2.apk
+[应用汇官网]: http://www.appchina.com/
+[CHANGELOG.md]: CHANGELOG.md

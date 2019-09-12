@@ -60,7 +60,7 @@
 只需在 app module 的 build.gradle 文件中加入编译依赖即可，如下：
 
 ```groovy
-implementation 'com.appchina:app-unlock:$last_version'
+implementation 'com.appchina.android:app-unlock:$last_version'
 ```
 
 请自行替换 `$last_version` 为最新的版本号（蓝色框框内的就是版本号）： [ ![Download][download_badge_icon]][download_page]
@@ -153,10 +153,10 @@ public class MainActivity ... {
 
 [CHANGELOG.md]
 
-[download_badge_icon]: https://api.bintray.com/packages/ac-android/maven/app-unlock/images/download.svg
-[download_page]: https://bintray.com/ac-android/maven/app-unlock/_latestVersion
+[download_badge_icon]: https://api.bintray.com/packages/appchina/maven/app-unlock/images/download.svg
+[download_page]: https://bintray.com/appchina/maven/app-unlock/_latestVersion
 [aar_to_library_url]: http://www.jianshu.com/p/ccf306e08d5b
-[view_sign_app_dl_url]: https://github.com/ac-android/app-unlock-sdk/raw/master/art/app_sign_viewer.apk
-[demo_url]: https://github.com/ac-android/app-unlock-sdk/raw/master/app-unlock-sample-release-1.0.0-b2.apk
+[view_sign_app_dl_url]: https://github.com/appchinacom/app-unlock-sdk/raw/master/art/app_sign_viewer.apk
+[demo_url]: https://github.com/appchinacom/app-unlock-sdk/raw/master/app-unlock-sample-release-1.0.0-b2.apk
 [应用汇官网]: http://www.appchina.com/
 [CHANGELOG.md]: CHANGELOG.md
